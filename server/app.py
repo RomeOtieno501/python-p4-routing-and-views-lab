@@ -11,9 +11,9 @@ def print_string(parameter):
     print(parameter)
     return parameter
 
-@app.route('/count/<int:parameter>') 
-def count(parameter): 
-    return '\n'.join(str(i) for i in range(parameter))
+@app.route('/count/<int:number>')
+def count(number):
+    return '\n'.join(str(i) for i in range(number))
 
 @app.route('/math/<int:num1>/<string:operation>/<int:num2>')
 def math(num1, operation, num2):
